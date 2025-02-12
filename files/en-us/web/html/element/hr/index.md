@@ -9,7 +9,34 @@ browser-compat: html.elements.hr
 
 The **`<hr>`** [HTML](/en-US/docs/Web/HTML) element represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.
 
-{{EmbedInteractiveExample("pages/tabbed/hr.html", "tabbed-shorter")}}
+{{InteractiveExample("HTML Demo: <hr>", "tabbed-shorter")}}
+
+```html interactive-example
+<p>§1: The first rule of Fight Club is: You do not talk about Fight Club.</p>
+
+<hr />
+
+<p>§2: The second rule of Fight Club is: Always bring cupcakes.</p>
+```
+
+```css interactive-example
+hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+hr::after {
+  background: #fff;
+  content: '§';
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+```
 
 Historically, this has been presented as a horizontal rule or line. While it may still be displayed as a horizontal rule in visual browsers, this element is now defined in semantic terms, rather than presentational terms, so if you wish to draw a horizontal line, you should do so using appropriate CSS.
 

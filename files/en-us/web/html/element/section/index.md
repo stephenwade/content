@@ -9,7 +9,30 @@ browser-compat: html.elements.section
 
 The **`<section>`** [HTML](/en-US/docs/Web/HTML) element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.
 
-{{EmbedInteractiveExample("pages/tabbed/section.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: <section>", "tabbed-standard")}}
+
+```html interactive-example
+<h1>Choosing an Apple</h1>
+<section>
+  <h2>Introduction</h2>
+  <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+</section>
+
+<section>
+  <h2>Criteria</h2>
+  <p>
+    There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness,
+    tartness...
+  </p>
+</section>
+```
+
+```css interactive-example
+h1,
+h2 {
+  margin: 0;
+}
+```
 
 ## Attributes
 

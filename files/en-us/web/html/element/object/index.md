@@ -9,7 +9,11 @@ browser-compat: html.elements.object
 
 The **`<object>`** [HTML](/en-US/docs/Web/HTML) element represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin.
 
-{{EmbedInteractiveExample("pages/tabbed/object.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: <object>", "tabbed-standard")}}
+
+```html interactive-example
+<object type="application/pdf" data="/media/examples/In-CC0.pdf" width="250" height="200"></object>
+```
 
 ## Attributes
 

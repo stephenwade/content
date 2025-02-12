@@ -15,7 +15,27 @@ The data that is used will either be the track that has been set to be the defau
 
 The tracks are formatted in [WebVTT format](/en-US/docs/Web/API/WebVTT_API) (`.vtt` files) — Web Video Text Tracks.
 
-{{EmbedInteractiveExample("pages/tabbed/track.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: <track>", "tabbed-standard")}}
+
+```html interactive-example
+<video controls src="/media/cc0-videos/friday.mp4">
+  <track default kind="captions" srclang="en" src="/media/examples/friday.vtt" />
+  Download the
+  <a href="/media/cc0-videos/friday.mp4">MP4</a>
+  video, and
+  <a href="/media/examples/friday.vtt">subtitles</a>.
+</video>
+```
+
+```css interactive-example
+video {
+  width: 250px;
+}
+
+video::cue {
+  font-size: 1rem;
+}
+```
 
 ## Attributes
 

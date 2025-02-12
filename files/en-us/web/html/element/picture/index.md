@@ -11,7 +11,16 @@ The **`<picture>`** [HTML](/en-US/docs/Web/HTML) element contains zero or more {
 
 The browser will consider each child `<source>` element and choose the best match among them. If no matches are found—or the browser doesn't support the `<picture>` element—the URL of the `<img>` element's [`src`](/en-US/docs/Web/HTML/Element/img#src) attribute is selected. The selected image is then presented in the space occupied by the `<img>` element.
 
-{{EmbedInteractiveExample("pages/tabbed/picture.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: <picture>", "tabbed-standard")}}
+
+```html interactive-example
+<!--Change the browser window width to see the image change.-->
+
+<picture>
+  <source srcset="/media/cc0-images/surfer-240-200.jpg" media="(orientation: portrait)" />
+  <img src="/media/cc0-images/painted-hand-298-332.jpg" alt="" />
+</picture>
+```
 
 To decide which URL to load, the {{Glossary("user agent")}} examines each `<source>`'s [`srcset`](/en-US/docs/Web/HTML/Element/source#srcset), [`media`](/en-US/docs/Web/HTML/Element/source#media), and [`type`](/en-US/docs/Web/HTML/Element/source#type) attributes to select a compatible image that best matches the current layout and capabilities of the display device.
 
